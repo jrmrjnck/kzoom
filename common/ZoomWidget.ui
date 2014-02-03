@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ZoomWidget</class>
+ <widget class="QWidget" name="ZoomWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>105</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <widget class="QPushButton" name="_zoomInButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Zoom In</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="_zoomOutButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Zoom Out</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>_zoomInButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ZoomWidget</receiver>
+   <slot>zoomIn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>82</x>
+     <y>-15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>_zoomOutButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ZoomWidget</receiver>
+   <slot>zoomOut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>-10</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>zoomIn()</slot>
+  <slot>zoomOut()</slot>
+ </slots>
+</ui>
